@@ -1,0 +1,31 @@
+# include <stdio.h>
+ int main(){
+     int a,b;
+     char op;
+     scanf("%d%c%d",&a,&op,&b);
+     
+     switch(op){
+         case'+' :
+         printf("sum = %d",a+b);
+         break;
+     
+         case'-' :
+         printf("diff = %d",a-b);
+         break;
+         
+         case'*' :
+         printf("mul = %d",a*b);
+         break;
+         
+         case'/':
+         if(b!=0)
+         printf("div = %d",a/b);
+         else
+         printf("division by zero error");
+         break;
+         
+         default:
+         printf("invalid operator");
+     }
+     return 0;
+ }
