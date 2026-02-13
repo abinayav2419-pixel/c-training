@@ -1,0 +1,15 @@
+# include <stdio.h>
+int main(){
+int n,reverse =  0, remainder;
+
+scanf("%d",&n);
+
+    for(;n!= 0; n = n /10){
+       remainder = n % 10;
+       reverse = reverse*10 + remainder;
+    }
+         printf("%d\n", reverse );
+
+      
+    return 0;
+}
